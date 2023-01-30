@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  /* add background of a gradient transitioning from light brown to dark brown */
+  body {
+    background: linear-gradient(to right, #f5f5dc, #d2b48c);
+  }
+  h1 {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: saddlebrown;
+    font-size: 50px;
+    text-align: center;
+  }
+  h2 {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: deepskyblue;
+    font-size: 30px;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Input Mono", Monaco, monospace;
+    color: cyan;
+    font-size: 20px;
+    text-align: center;
+  }
+  p {
+    /* cyan color, with slight shadow */
+    color: cyan;
+    text-shadow: 1px 1px 2px black, 0 0 25px cyan, 0 0 5px darkcyan;
+    font-family: "Input Mono", Monaco, monospace;
+    font-size: 20px;
+  }
+  /* Add style for links */
+  a {
+    color: lightgreen;
+    text-shadow: 1px 1px 2px black, 0 0 25px cyan, 0 0 5px darkcyan;
+    font-family: "Input Mono", Monaco, monospace;
+    font-size: 20px;
+  }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Game against engine</title>
+</head>
+<body>
+
+<h1>Chess Game against engine (~2000 Elo)</h1>
+
+</body>
+
+<div id="csoPvcCon"></div>
+<script type="text/javascript" src="https://www.chessstrategyonline.com/js/widgets.min.js"></script>
+<script type="text/javascript">
+  csoPlayVsComputer({
+    boardStyle: "default",
+    pieceStyle: "wikipedia",
+    showCoordinates: true,
+    width: 800
+  });
+</script>
+
+</html>
